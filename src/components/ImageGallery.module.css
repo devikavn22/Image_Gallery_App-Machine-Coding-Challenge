@@ -1,0 +1,47 @@
+.imgGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.imgContainer{
+    padding: 20px;
+    margin: 16px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease; 
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); 
+  }
+  
+  /* Medium devices (Tablets and up) */
+  @media (min-width: 576px) {
+    .gallery-image {
+      flex-basis: calc(50% - 30px);
+    }
+  }
+  
+  /* Larger devices (Desktops and up) */
+  @media (min-width: 768px) {
+    .gallery-image {
+      flex-basis: calc(33.33% - 16px); 
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .gallery-image {
+      flex-basis: calc(25% - 16px); 
+    }
+  }
+  
+  
